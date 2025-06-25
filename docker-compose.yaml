@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+    php:
+        build: .
+        container_name: php83-cli-container
+        volumes:
+            - .:/var/www/html
+        command: tail -f /dev/null

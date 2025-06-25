@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bin/.phpunit/phpunit.xsd" backupGlobals="false" colors="true" beStrictAboutChangesToGlobalState="true" beStrictAboutOutputDuringTests="true" beStrictAboutTestsThatDoNotTestAnything="true" failOnRisky="true" failOnWarning="true" cacheDirectory=".phpunit.cache" beStrictAboutCoverageMetadata="true">
+  <php>
+    <ini name="display_errors" value="1"/>
+    <ini name="error_reporting" value="-1"/>
+    <ini name="memory_limit" value="1G"/>
+  </php>
+  <testsuites>
+    <testsuite name="Unit">
+      <directory>tests/unit</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

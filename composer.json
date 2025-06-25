@@ -1,0 +1,49 @@
+{
+    "name": "wisebits/user-crud",
+    "description": "User management example",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "phpmd/phpmd": "^2.15",
+        "phpstan/phpstan": "^1.12.25",
+        "phpunit/phpunit": "^11.5",
+        "rector/rector": "^1.2.10"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "prepend-autoloader": false,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\Unit\\": "tests/unit/"
+        }
+    },
+    "scripts": {
+        "fix-phpcs": [
+            "php-cs-fixer fix ."
+        ],
+        "analyze-phpmd": [
+            "phpmd . ansi phpmd_ruleset.xml --exclude /*/bin/.phpunit,/*/var,/*/vendor"
+        ],
+        "analyze-stan": [
+            "phpstan analyse . --memory-limit=512M"
+        ],
+        "test-unit": [
+            "phpunit --testsuite Unit"
+        ]
+    }
+}
