@@ -11,8 +11,7 @@
         "friendsofphp/php-cs-fixer": "^3.75",
         "phpmd/phpmd": "^2.15",
         "phpstan/phpstan": "^1.12.25",
-        "phpunit/phpunit": "^11.5",
-        "rector/rector": "^1.2.10"
+        "phpunit/phpunit": "^11.5"
     },
     "config": {
         "optimize-autoloader": true,
