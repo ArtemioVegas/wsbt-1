@@ -1,4 +1,8 @@
-# Demo
+# Test Assignment - User App
+
+## Assignment specifications:
+
+https://github.com/ArtemioVegas/wsbt-1/blob/master/specifications.md
 
 ## Installation
 
